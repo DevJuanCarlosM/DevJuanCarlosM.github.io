@@ -1,0 +1,32 @@
+.testimony {
+  /*border: 1px solid red;*/
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
+.testimony-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testimony-image img {
+  max-inline-size: 100%;
+}
+@media screen and (min-width: 768px) {
+  .testimony {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+  .testimony-description {
+    flex: 1;
+  }
+  .testimony:nth-child(odd) .testimony-image {
+    /* border: 10px solid red;*/
+    order: 2;
+    flex: 2;
+    text-align: center;
+  }
+}

@@ -1,0 +1,94 @@
+@import "./button.CSS";
+@import "./button-icon.CSS";
+@import "./header.CSS";
+@import "./hero.CSS";
+@import "./wrapper.CSS";
+@import "./menu.CSS";
+@import "./testimony.CSS";
+@import "./social.CSS";
+@import "./footer.CSS";
+@import "./form.CSS";
+@import "./title.CSS";
+@import "./baner.CSS";
+:root {
+  --fontbase: "Poppins", sans-serif;
+  --headline1: bold 95px /153.71px var(--fontbase);
+  --headline2: bold 59px /95px var(--fontbase);
+  --headline3: bold 48px /77px var(--fontbase);
+  --headline4: bold 34px /55px var(--fontbase);
+  --headline5: bold 24px /38px var(--fontbase);
+  --body1: 16px /25px var(--fontbase);
+  --body2: 14px /22px var(--fontbase);
+  --button: bold 14px /22px var(--fontbase);
+  --caption: 12px /19px var(--fontbase);
+  --gradient: radial-gradient(
+      41.48% 11.48% at 2.38% 8.52%,
+      #747de9 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(45deg, red, blue, orange, white);
+  --red: red;
+  --blue: blue;
+  --orange: orange;
+  --white: white;
+  --black: black;
+}
+/*boton arriba*/
+#button-up{
+  width: 60px;
+    height: 60px;
+    background-color: #aa395b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+#button-up:hover{
+  transform: scale(1.1);
+  border-color: rgb(0, 0, 0,0.5);
+}
+
+
+.body {
+  background-image: var(--gradient);
+  min-block-size: 100vh;
+  background-size: 400% 400%;
+  position: relative;
+  animation: cambiar 10s ease-in-out infinite;
+  font: var(--body1);
+  color: var(--white);
+  margin: 0;
+}
+.pre-projects-content {
+  max-inline-size: 900px;
+  margin: auto;
+  text-align: center;
+}
+.u-wrapper {
+  max-inline-size: 1232px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
